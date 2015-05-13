@@ -93,7 +93,6 @@ def parseStationInfo(name):
 
 win = Tk()
 fr = Frame(win).pack()
-#win.geometry("300x100+300+300")
 win.title("Weather Station HTML Parser")
 stationVar = StringVar()
 Label(fr, text="Station").pack()
