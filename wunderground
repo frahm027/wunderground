@@ -10,7 +10,6 @@ from Tkinter import *
 
 def parseCurrentValues(name):
     url = "http://www.wunderground.com/cgi-bin/findweather/getForecast?query=pws:" + name
-    #url = "http://www.wunderground.com/cgi-bin/findweather/getForecast?query=pws:MBRUA2#"
     content = urllib2.urlopen(url).read()
     html = BS(content)
     for times in html('div', {'class' : "local-time"}):
